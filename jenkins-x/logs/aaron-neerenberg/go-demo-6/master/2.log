@@ -1,0 +1,33 @@
+Step: step-credential-initializer-jjdh6:
+
+{"level":"warn","ts":1565729393.3235636,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565729393.3240776,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: step-working-dir-initializer-tmfvt:
+
+{"level":"warn","ts":1565729393.791568,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1565729393.7927344,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/charts/go-demo-6\""}
+Step: step-place-tools:
+
+Step: step-git-source-aaron-neerenberg-go-demo-6-mast-2f2bd:
+
+{"level":"warn","ts":1565729399.99799,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565729400.3666418,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/aaron-neerenberg/go-demo-6.git @ v1.0.336 in path /workspace/source"}
+Step: step-git-merge:
+
+WARNING: no SHAs to merge, falling back to initial cloned commit
+Step: step-setup-jx-git-credentials:
+
+Generated Git credentials file /workspace/xdg_config/git/credentials
+Step: step-build-make-build:
+
+make: *** No rule to make target `build'.  Stop.
+Step: step-build-container-build:
+
+Step: step-build-post-build:
+
+Step: step-promote-changelog:
+
+Step: step-promote-helm-release:
+
+Step: step-promote-jx-promote:
+
